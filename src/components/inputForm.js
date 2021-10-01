@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Appwrite } from 'appwrite'
+import './styles.css';
+import image from './images/newsletter.png';
 
 function LoginUser(){
 
@@ -17,11 +19,6 @@ function LoginUser(){
             company,
             role
         };
-
-        console.log(name);
-        console.log(email);
-        console.log(company);
-        console.log(role);
 
         let appwrite = new Appwrite();
         const appwriteEndpoint = 'http://localhost/v1';
@@ -48,13 +45,36 @@ function LoginUser(){
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Enter Name" value={name} onChange={(e) => setName(e.target.value)} /><br/>
-            <input type="email" placeholder="Enter Email" value={email} onChange={(e) => setEmail(e.target.value)} /><br/>
-            <input type="text" placeholder="Your Company" value={company} onChange={(e) => setCompany(e.target.value)} /><br/>
-            <input type="text" placeholder="Your Role" value={role} onChange={(e) => setRole(e.target.value)} /><br/>
-            <button type="submit">Submit</button>
-        </form>
+        <div className="content">
+            <div className="input-form">
+
+                <div className="main main-raised">
+
+                    <div>
+                        <div Style={"margin:auto; width:fit-content"}>
+                            <img className="mb-4 newsletter-logo" src={image} alt="" width="100" height="100" />
+                        </div>
+
+                        <h1 className="h3 mb-3 fw-normal">Newsletter SignUp</h1>
+
+                        <form onSubmit={handleSubmit}>
+                            <div Style={"margin:auto; width:fit-content"}>
+                                <input type="text" className="form-control top" placeholder="Enter Name" value={name} onChange={(e) => setName(e.target.value)} /><br/>
+                                <input type="email" className="form-control middle" placeholder="Enter Email" value={email} onChange={(e) => setEmail(e.target.value)} /><br/>
+                                <input type="text" className="form-control middle" placeholder="Your Company" value={company} onChange={(e) => setCompany(e.target.value)} /><br/>
+                                <input type="text" className="form-control bottom" placeholder="Your Role" value={role} onChange={(e) => setRole(e.target.value)} /><br/>
+                            </div>
+                            <div Style={"margin:auto; width:fit-content"}>
+                                <button className="btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                
+                </div>
+
+            </div>
+            <p Style="margin:auto; width:fit-content" class="mt-5 mb-3 text-muted">&copy; Pranav Singh</p>
+        </div>
     );
 }
 
