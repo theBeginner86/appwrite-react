@@ -24,29 +24,32 @@ function LoginUser(){
         };
 
         let appwrite = new Appwrite();
-        const appwriteEndpoint = 'http://localhost/v1';
-        const projectID = '6156050454d9e';
-        const documentID = '6156b0c2ecf6f';
+        const server = {
+            appwriteEndpoint: process.env.REACT_APP_ENDPOINT,
+            projectID: process.env.REACT_APP_PROJECT_ID,
+            documentID: process.env.REACT_APP_COLLECTION_ID,
+            email: process.env.REACT_APP_USER_CREDENTIALS_EMAIL,
+            password: process.env.REACT_APP_USER_CREDENTIALS_PASSWORD
+        }
 
         appwrite
-            .setEndpoint(appwriteEndpoint) // Your Appwrite Endpoint
-            .setProject(projectID) // Your project ID
+            .setEndpoint(server.appwriteEndpoint)
+            .setProject(server.projectID)
 
-        await appwrite.account.createSession('theBeginner86@twitter.com', 'test@12').then(() => {
+        await appwrite.account.createSession(server.email, server.password).then(() => {
             
-            let promise =  appwrite.database.createDocument(documentID, userData);
+            let promise =  appwrite.database.createDocument(server.documentID, userData);
 
             promise.then((res) => {
                 history.push('/success');
-                console.log(res); // Success
+                console.log(res);
             }, function (err) {
                 history.push('/failure');
-                console.log(err); // Failure
+                console.log(err);
             }); 
-            // Success
         }, function (err) {
             history.push('/failure');
-            console.log(err); // Failure
+            console.log(err);
         });
     }
 
