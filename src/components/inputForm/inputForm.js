@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Appwrite } from 'appwrite'
+import { Appwrite } from 'appwrite';
 import { useHistory } from 'react-router-dom';
 import './styles.css';
 import image from '../images/newsletter.png';
 
-function LoginUser(){
+function InputForm(){
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -86,4 +86,4 @@ function LoginUser(){
     );
 }
 
-export default LoginUser;
+export default InputForm;
