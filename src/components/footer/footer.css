@@ -1,0 +1,40 @@
+.footer {
+    padding: 40px 20px;
+}
+
+.footer-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-info {
+    margin: auto;
+    width: fit-content;
+}
+
+.links {
+    font-size: large;
+}
+
+.links:hover {
+    color:  #ff577f;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.copyright {
+    color: black;
+    padding: 30px 0px 20px 0px;
+    margin: 0;
+    font-size: small;
+}
+
+.profile-img {
+    width: 25px;
+    height: 25px;
+}
+
+.profile-img:hover {
+    width: 30px;
+    height: 30px;
+}
