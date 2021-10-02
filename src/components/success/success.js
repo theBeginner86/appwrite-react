@@ -11,7 +11,7 @@ function Success(){
     }
 
     return (
-        <div className="s-umbotron">
+        <div className="s-jumbotron">
             <div className="container" Style={"padding-top:5rem;"}>
 
                 <h1 className="display-4">SUCCESS</h1>
