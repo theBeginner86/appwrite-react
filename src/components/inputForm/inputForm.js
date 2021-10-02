@@ -32,7 +32,7 @@ function LoginUser(){
             .setEndpoint(appwriteEndpoint) // Your Appwrite Endpoint
             .setProject(projectID) // Your project ID
 
-        await appwrite.account.createSession('theBeginner86@twitter.com', 'test@123').then(() => {
+        await appwrite.account.createSession('theBeginner86@twitter.com', 'test@12').then(() => {
             
             let promise =  appwrite.database.createDocument(documentID, userData);
 
@@ -40,10 +40,12 @@ function LoginUser(){
                 history.push('/success');
                 console.log(res); // Success
             }, function (err) {
+                history.push('/failure');
                 console.log(err); // Failure
             }); 
             // Success
         }, function (err) {
+            history.push('/failure');
             console.log(err); // Failure
         });
     }
@@ -77,7 +79,6 @@ function LoginUser(){
                 </div>
 
             </div>
-            <p Style="margin:auto; width:fit-content" class="mt-5 mb-3 text-muted">&copy; Pranav Singh</p>
         </div>
     );
 }
