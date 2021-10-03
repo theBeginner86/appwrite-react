@@ -7,6 +7,18 @@ It supports multiple languages and its UI is super cool to work with.
 
 
 This repo contains the code for the Newsletter Application. I wrote a blog on it at [Medium](https://thebeginner86.medium.com/newsletter-form-application-with-appwrite-and-react-2791bd38a457). Do check it out first as we would be using the concepts explained in that article. It would be helpful, if your are looking forward to using [Appwrite](https://github.com/appwrite/appwrite) in your next React application. I've explained about integrating [Appwrite](https://github.com/appwrite/appwrite) with [React](https://github.com/facebook/react) through its web client SDKs.
+<br />
+<br />
+
+### Screenshots:
+
+<br />
+
+![app-ss1](assets/app-ss1.png)
+
+![app-ss2](assets/app-ss2.png)
+
+![app-ss3](assets/app-ss3.png)
 
 
 <hr>
