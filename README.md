@@ -6,7 +6,7 @@ It abstracts the time-consuming development tasks and provides pre-built SDKs to
 It supports multiple languages and its UI is super cool to work with.
 
 
-This repo contains the code for the Newsletter Application. I wrote a blog on it at [Medium](). Do check it out first as we would be using the concepts explained in that article. It would be helpful, if your are looking forward to using [Appwrite](https://github.com/appwrite/appwrite) in your next React application. I've explained about integrating [Appwrite](https://github.com/appwrite/appwrite) with [React](https://github.com/facebook/react) through its web client SDKs.
+This repo contains the code for the Newsletter Application. I wrote a blog on it at [Medium](https://thebeginner86.medium.com/newsletter-form-application-with-appwrite-and-react-2791bd38a457). Do check it out first as we would be using the concepts explained in that article. It would be helpful, if your are looking forward to using [Appwrite](https://github.com/appwrite/appwrite) in your next React application. I've explained about integrating [Appwrite](https://github.com/appwrite/appwrite) with [React](https://github.com/facebook/react) through its web client SDKs.
 
 
 <hr>
@@ -68,7 +68,7 @@ $ cd appwrite-react
 $ npm i
 ```
 
-5. Inorder for the application to work, you need to take few ids from your project on Appwrite. Its detailed steps have been explained on my [Medium]() article. Besure to check that out before you run your application.
+5. Inorder for the application to work, you need to take few ids from your project on Appwrite. Its detailed steps have been explained on my [Medium](https://thebeginner86.medium.com/newsletter-form-application-with-appwrite-and-react-2791bd38a457) article. Besure to check that out before you run your application.
 
 6. You need to create a .env file so that those ids and credentials could be appended in it and the React applciation could easily pick those from .env file.
 
@@ -87,9 +87,9 @@ REACT_APP_USER_CREDENTIALS_EMAIL=
 REACT_APP_USER_CREDENTIALS_PASSWORD=
 ```
 
-You need to copy these into .env and take values from your Appwrite project which we had setup on my [Medium]() article.
+You need to copy these into .env and take values from your Appwrite project which we had setup on my [Medium](https://thebeginner86.medium.com/newsletter-form-application-with-appwrite-and-react-2791bd38a457) article.
 
-> Dont get intimidated. These are very easy to extract. Just follow my [Medium]() article and everything would fall in place.
+> Dont get intimidated. These are very easy to extract. Just follow my [Medium](https://thebeginner86.medium.com/newsletter-form-application-with-appwrite-and-react-2791bd38a457) article and everything would fall in place.
 
 5. Now start the server
 ```
@@ -110,6 +110,6 @@ $ npm start
 Thanks for testing out my application.
 If you have any doubts then feel free to ask me on [Twitter](https://twitter.com/theBeginner86). My DMs are always open to interact with people 🙌
 
-Inorder to understand the basics do checkout my article on [Medium]().
+Inorder to understand the basics do checkout my article on [Medium](https://thebeginner86.medium.com/newsletter-form-application-with-appwrite-and-react-2791bd38a457).
 
 ### Developed with ❤️ by  [Pranav Singh](https://twitter.com/theBeginner86) 😎 👨‍💻
