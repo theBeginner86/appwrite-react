@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import InputForm from "./components/inputForm/inputForm";
 import Success from './components/success/success';
 import Failure from './components/failure/failure';
-import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         <Route path='/success' component={Success} />
         <Route path='/failure' component={Failure} />
       </Switch>
-      <Footer />
     </Router>
   );    
 }

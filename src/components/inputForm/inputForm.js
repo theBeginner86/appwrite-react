@@ -3,6 +3,7 @@ import { Appwrite } from 'appwrite';
 import { useHistory } from 'react-router-dom';
 import './styles.css';
 import image from '../images/newsletter.png';
+import Footer from '../footer/footer';
 
 function InputForm(){
 
@@ -82,6 +83,7 @@ function InputForm(){
                 </div>
 
             </div>
+            <Footer />
         </div>
     );
 }
