@@ -79,11 +79,13 @@ $ touch .env
 7. Take reference from .env.example file
 
 You would require following values: <br /><br />
-REACT_APP_ENDPOINT= <br />
-REACT_APP_PROJECT_ID= <br />
-REACT_APP_COLLECTION_ID= <br />
-REACT_APP_USER_CREDENTIALS_EMAIL= <br />
-REACT_APP_USER_CREDENTIALS_PASSWORD= <br />
+```
+REACT_APP_ENDPOINT=
+REACT_APP_PROJECT_ID=
+REACT_APP_COLLECTION_ID=
+REACT_APP_USER_CREDENTIALS_EMAIL=
+REACT_APP_USER_CREDENTIALS_PASSWORD=
+```
 
 You need to copy these into .env and take values from your Appwrite project which we had setup on my [Medium]() article.
 
